@@ -64,7 +64,7 @@ describe(@"FISAppDelegate", ^{
         });
 
         it(@"does no truncation or padding when given a length longer than the name", ^{
-            NSString *shortenedName = [appDelegate stringByTruncatingNameOfLocation:empireState toLength:100];
+            NSString *shortenedName = [appDelegate stringByTruncatingNameOfLocation:empireState toLength:100]; // y u throwin me outta range man
             expect(shortenedName).to.equal(empireStateName);
         });
     });
